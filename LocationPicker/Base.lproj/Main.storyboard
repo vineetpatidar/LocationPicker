@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zXp-O1-WdO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mmH-sf-moM">
+            <objects>
+                <navigationController id="zXp-O1-WdO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yS8-lC-sow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IfK-h1-2s3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Df-zd-udf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1276" y="-61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-iF-NUs">
+                                <state key="normal" title="Open map View"/>
+                                <connections>
+                                    <action selector="openMapButton_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aok-Pe-QfZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Address Come Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23G-mK-bVa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="zDw-Es-Vxb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oKP-iF-NUs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EtQ-6a-Z46"/>
+                            <constraint firstItem="23G-mK-bVa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="HF8-4t-sFs"/>
+                            <constraint firstItem="oKP-iF-NUs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lkg-dv-Tq4"/>
+                            <constraint firstItem="23G-mK-bVa" firstAttribute="centerX" secondItem="oKP-iF-NUs" secondAttribute="centerX" id="UQ8-pl-7kK"/>
+                            <constraint firstItem="oKP-iF-NUs" firstAttribute="top" secondItem="23G-mK-bVa" secondAttribute="bottom" constant="54" id="h4D-e9-OGG"/>
+                            <constraint firstItem="oKP-iF-NUs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="87" id="hQL-qW-UKM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ftt-4O-lgi"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="23G-mK-bVa" id="jF2-Ng-2Sx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474.39999999999998" y="-62.518740629685162"/>
+        </scene>
+    </scenes>
+</document>
